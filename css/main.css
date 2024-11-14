@@ -9,3 +9,11 @@
     padding: 10px;
     font-size: 0.5rem;
 }
+
+body{
+    background-image: url(/images/coffee-bar.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
