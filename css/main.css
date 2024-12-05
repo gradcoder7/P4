@@ -1,30 +1,423 @@
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: aliceblue;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    font-size: 0.5rem;
+/* DEVELOPER gradcoder7, IS117-004, Fall 2024 */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
 
-body{
+.navbar-brand{
+  font-family: "Brush Script MT";
+}
+
+
+#Intro{
+    padding-top: 10px;
+}
+/*****************************************************************************************************************************/
+/*Home Page Background*/
+.home{
     background-image: url(../images/coffee-bar.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+    padding-bottom: 50px;
 }
 
-.center{
+.contact1{
+  background-image: url(../images/ContactPage.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  padding-bottom: 50px;
+}
+/**********************************************************************************************************************/
+/*** Menu Style ***/
+.menubck{
+  background-image: url(../images/CoffeeShopMenu.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  padding-bottom: 50px;/*You either use this to add space between the last image and footer OR use PIC3*/
+}
+
+
+/**********************************************************************************************************************/
+/**********************************************************************************************************************/
+/***About Style***/
+.abtpg{
+  background-image: url(../images/AboutPage.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  padding-bottom: 50px;/*You either use this to add space between the last image and footer OR use PIC3*/
+}
+
+.Page-Worth-abt{
+  background-color: peachpuff;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  width: 50%;
+}
+
+
+/***********************************************************************************************************************/
+/***********************************************************************************************************************/
+/*Environment Style*/
+/*First Image*/
+.envir{
+  background-image: url(../images/CoffeeEnvBckground.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  padding-bottom: 50px;/*You either use this to add space between the last image and footer OR use PIC3*/
+}
+
+.toLeft1{
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: peachpuff;
+  position:absolute;
+  width: 70%;
+  left: 15%;
+  height: 30%;
+}
+
+.Pic1{
+  float: left;
+  width:40%;
+}
+
+.toRight1{
+  margin-top: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: peachpuff;
+  position:absolute;
+  width: 70%;
+  left: 15%;
+  height: 30%;
+}
+
+.Pic2{
+  float: right;
+  width:  40%;
+}
+
+.toLeft2{
+  margin-top: 45%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: peachpuff;
+  position:absolute;
+  width: 70%;
+  left: 15%;
+  height: 30%;
+}
+
+.Pic3{
+  float: left;
+  width:  40%;
+  margin-bottom: 50px;/*To space it away from the footer*/
+}
+
+
+
+
+/****************************************************************************************************************************/
+.container1{
+  background-color: peachpuff;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.form-group textarea{
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  box-sizing: border-box;
+  outline: none;
+  font-size: 18px;
+  font-family:sans-serif;
+}
+
+.IntroWords{
+  color: #301d10 !important;
+  background-color: rgba(255, 219, 88, .6);
+}
+
+.Words p{
+  background-color: peachpuff;
+  text-align: center;
+  padding: 10px;
+  width:500px;
+  height: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+}
+/*
+.form-group-comment{
+  width:50%;
+  margin-left:auto;
+  margin-right: auto;
+}*/
+
+
+
+
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+/*Card Styles*/
+/*CARDS START HERE!!!!!!*/
+/*Adjusts all images to fill any spaces and gaps especially the Cards to have the same height and width*/
+div .card-container img{
+    /*float:left; Uncessary at the moment*/
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.card-container{
+    justify-content:center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    padding-bottom: 50px;
+    padding: 0 10%;/*Will keep the items organized and adapt one by one*/
+    display:grid;
+    grid-template-columns: repeat(3,1fr);/*Straight from 3 to 1 items*/
+}
+
+.card{
+    width: 325px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    margin: 20px;
+}
+
+.card img{
+    width:100%;
+    max-height:50%;
+}
+
+.card-content{
+    padding:16px;
+}
+
+.card-content h3{
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.card-content p{
+    color:blue;
+    font-size: 15px;
+    line-height: 1.3;
+}
+
+.card-content .button{
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: gray;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 16px;
+    color: white;
+}
+
+/*Centers the introduction Title of the Home Page*/
+.center {
     left: 0;
     bottom: 0;
     width: 100%;
     padding: 10px;
+    padding-top: 10px;
     color: #301d10 !important;
     background-color: rgba(255, 219, 88, .6);
     text-align: center;
     font-size: 80px;
 }
+
+/* GALLERY */
+body {
+    font-family: Arial;
+    margin: 0;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+
+ img {
+    vertical-align: middle;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+  }
+
+  .mySlides img{
+    width:100%;
+    height:500px;
+    object-fit:cover;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position:absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right:24px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+/*Footer Sytles*/
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: aliceblue;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 0.5rem;
+  margin-top: 100px;
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+}
+/*Straight from 3 to 1 items*/
+
+/*Adjusts the rows into a single column once width of screen is 900px*/
+@media screen and (max-width: 900px){
+    .card-container{
+        width: 100%;
+        content: "";
+        display:table;
+        clear: both;
+        justify-content: center;
+    }
+    div .card-container img{
+        float: left;
+        width:100%;
+        height:200px;
+        object-fit: cover;
+    }
+    .mySlides img{
+        width:100%;
+        height: 200px;
+        object-fit:cover;
+      }
+      .En1{
+        width: 100%;
+        content: "";
+        display:table;
+        clear: both;
+        justify-content: center;
+        font-size:60%;
+    }
+      .Pic1{
+        max-height:50%;
+      }
+      .Pic2{
+        max-height:50%;
+      }
+      .Pic3{
+        max-height:50%;
+      }
+      .toRight1{
+        margin-top: 70%;
+      }
+      .toLeft2{
+        margin-top: 130%;
+      }
+      .Pic3{
+        margin-bottom: 70%;
+      }
+} 
+
